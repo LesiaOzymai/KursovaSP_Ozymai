@@ -25,3 +25,11 @@ int Calculator::Mul (double a, double b)
 {
     return a * b + 0.5;
 }
+// Add a new method for division
+float Calculator::Div(float a, float b) {
+    if (b == 0) {
+        std::cerr << "Division by zero is not allowed!";
+        return 0;
+    }
+    return a / b;
+}
